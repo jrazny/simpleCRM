@@ -27,10 +27,10 @@ export class DialogAddUserComponent implements OnInit {
     console.log('current user is', this.user)
 
     this.firestore
-    .collection('users')
-    .add(this.user.toJSON())
-    .then((result: any) => {
-      console.log('Adding user finished', result);
+      .collection('users')
+      .add(this.user.toJSON())
+      .then((result: any) => {
+        console.log('Adding user finished', result);
     });
   }
 
